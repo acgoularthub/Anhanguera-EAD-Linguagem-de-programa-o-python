@@ -1,0 +1,14 @@
+def calculaSalario():
+	imposto = 27.
+	while imposto > 0.:
+		imposto = input("imposto ou S (sair)")
+		if not imposto:
+			imposto = 27.
+		elif imposto == 's':
+			break
+		else:
+			imposto = float(imposto)
+		print("valor final: {0}".format(salario-(salario*imposto*0.01)) )
+
+salario = int(input("Digite o valor do salário"))
+calculaSalario()
