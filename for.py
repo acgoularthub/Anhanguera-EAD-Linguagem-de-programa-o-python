@@ -1,13 +1,20 @@
 def criaSequencia(): #cria função que recebe o parâmetro inicial e final do for
+	print('Inicio da função que cria sequencia: \n')
 	i = int(input("inicio: "))
 	f = int(input("fim: "))
 
 	for i in range(i,f+1, 1):
 		print(i)
 
-criaSequencia() #chama a função criada
+def somaSequencia(a):
+	r=0
+	for i in range(4):
+		r=r+i
+	return r
 
-print("\n")
+criaSequencia() #chama a função criada
+soma=somaSequencia(4)
+print(soma)
 
 for i in range (6): #cria uma sequncia de 6 numeros a partir do 0.
 	print (i)
