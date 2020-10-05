@@ -20,3 +20,4 @@ plt.show()
 
 #cria um "grafico" plotando a relação de x com y
 sns.scatterplot(df.x, df.y, hue = df.x)
+plt.show()
